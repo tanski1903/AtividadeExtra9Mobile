@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Folha de Pagamento"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Informe o nome..."
+        android:padding="10dp"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <EditText
+        android:id="@+id/edSalBruto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Informe o salário bruto..."
+        android:layout_below="@+id/edNome"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/txtSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informe o sexo:"
+        android:layout_below="@+id/edSalBruto"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSexo"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <RadioButton
+            android:id="@+id/rbMasc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/rbFem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feminino" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edNFilhos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Informe o Nº de filhos..."
+        android:layout_below="@+id/rgSexo"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@+id/edNFilhos"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btCalcular"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="10dp"
+        android:layout_below="@+id/txtResultado"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/txtINSS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="10dp"
+        android:layout_below="@id/txtNome"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/txtIR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="10dp"
+        android:layout_below="@+id/txtINSS"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/txtSalLiq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="10dp"
+        android:layout_below="@+id/txtIR"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+</RelativeLayout>
